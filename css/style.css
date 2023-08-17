@@ -539,3 +539,55 @@ grid-template-areas:
     height: auto; /* Автоматическая высота для сохранения пропорций */
   }
 }
+
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f6f8fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Остальной CSS... */
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-1__title,
+  .box-2__title,
+  .box-3__title,
+  .box-4__title,
+  .box-5__title,
+  .box-6__title,
+  .box-7__title,
+  .box-8__title,
+  .box-9__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Дополнительно корректируйте стили под меньшие экраны... */
+}
+
+/* Добавьте другие медиа-запросы при необходимости для других размеров экранов */
