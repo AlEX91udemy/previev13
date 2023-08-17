@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+  }
+
+  html {
+    font-family: 'Roboto!';
+    /* font: 1em sans-serif; */
+}
+/* ---------------------------------------------------font-------------------------------------------------------------------- */
+
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('../fonts/Roboto-Thin.eot');
+    src: url('../Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../Roboto-Thin.woff') format('woff'),
+    url('../Roboto-Thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    }    
+
+    @font-face {
+      font-family: 'Roboto!';
+      src: url('Roboto-Regular.eot');
+      src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Roboto-Regular.woff') format('woff'),
+      url('Roboto-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Roboto-400-0.6';
+      src: url('Roboto-Regular.eot');
+      src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Roboto-Regular.woff') format('woff'),
+      url('Roboto-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Roboto!';
+      src: url('Roboto-Medium.eot');
+      src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Roboto-Medium.woff') format('woff'),
+      url('Roboto-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      }
+
+    @font-face {
+        font-family: 'Roboto!';
+        src: url('Roboto-Medium.eot');
+        src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Medium.woff') format('woff'),
+        url('Roboto-Medium.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+        }
+
+[class^="box-"] {
+  background-color:rgba(246, 248, 251, 1);
+  /* Размещаем контейнеры по центру */
+  display: grid;
+  border-radius: 12px;
+  align-content: space-between;
+}
+
+.container {
+  display: grid;
+  gap: 16px 10px;
+  height: auto;
+  width: auto;
+  margin: 200px 200px 100px 100px;
+
+  
+  
+/* ! */
+/* grid-template-columns: 200px auto 100px;
+grid-template-rows: 200px auto 100px; */
+grid-template-areas:
+  "A A A A   B B B B    G G G G  I I I I"
+  "A A A A   C C C C    G G G G  I I I I"
+  "A A A A   D D D D    H H H H  I I I I"
+  "A A A A   E E E E    H H H H  I I I I"
+  "A A A A   F F F F    H H H H  I I I I";
+
+  justify-content: start;
+}
+.box-1 {
+  grid-area: A;
+  width: 400px; /* Ширина блока в пикселях */
+  height: 805px; /* Высота блока в пикселях */
+  
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-2 {
+  grid-area: B;
+  width: 400px; 
+  height: 148.2px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-3 {
+  grid-area: C;
+  width: 400px; 
+  height: 148.2px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.box-4 {
+  grid-area: D;
+  width: 400px; 
+  height: 148.2px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-5 {
+  grid-area: E;
+  width: 400px; 
+  height: 148.2px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-6 {
+  grid-area: F;
+  width: 400px; 
+  height: 148.2px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-7 {
+  grid-area: G;
+  width: 617px; 
+  height: 312px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-8 {
+  grid-area: H;
+  width: 617px; 
+  height: 477px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+.box-9 {
+  grid-area: I;
+  width: 321px; 
+  height: 805px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+}
+/* ---------------------------------------------------box-1-------------------------------------------------------------------- */
+.box-1__container {
+  margin:32px 20px;
+  padding:0 5.5px 0 5.5px;
+}
+
+
+.box-1__title {
+  margin: 0px 27px 24px 27px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+}
+
+.box-1__diagram{
+  width: 349px;
+  height: 412px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+  margin: 0 0 40px 0;
+}
+.box-1__item-plan {
+  margin: 0px 21px 20px 21px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+}
+.hr {
+  background-image: linear-gradient(to right, transparent, rgba(200, 210, 220, 1), transparent);
+  border: 0;
+  height: 1px;
+  margin: 0px 0 0px 0;
+}
+
+.box-1__item {
+  display: flex;
+  justify-content: flex-start;
+  width: 350px;
+  height: 209px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.box-1__item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(4, 40, 76, 1);
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0 20px 0 ;
+}
+
+.plan__item-str {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  color: rgba(4, 40, 76, 1);
+}
+
+.plan__item-num {
+  margin: 10px 0 0 0 ;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.44px;
+  color: rgba(4, 40, 76, 1);
+}
+.fact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.fact__item-str {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  color: rgba(4, 40, 76, 1);
+}
+.fact__item-num {
+  margin: 10px 0 0 0 ;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.44px;
+  color: rgba(4, 40, 76, 1);
+}
+/* ---------------------------------------------------box-2,box-3,box-4,box-5,box-6-------------------------------------------------------------------- */
+.box-2__title,
+.box-3__title,
+.box-4__title,
+.box-5__title,
+.box-6__title { 
+  display: flex;
+  align-items: left;
+  margin: 21px 16px  10px 16px;
+  line-height: 19px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(4, 40, 76, 1);
+}  
+
+.acceptance,
+.preparation,
+.conducted,
+.approved,
+.transferred {
+  display: flex;
+  align-items: left;
+  column-gap: 10px;
+  margin: 0px 10px 10px 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  color: rgba(4, 40, 76, 1);
+}
+
+.acceptance__item-num,
+.preparation__item-num,
+.conducted__item-num,
+.approved__item-num,
+.transferred__item-num {
+  display: flex;
+  justify-content: flex-end;
+  width: 270px;
+  height: 23px;
+}
+
+.kp {
+ margin-left: 4px; /* Расстояние между "Акцепт" и "КП" */
+}
+.box-3__title .kk {
+  padding-left:  4px;
+}
+.box-4__title .kk {
+  padding-right:  4px;
+}
+
+/* ---------------------------------------------------box-7-------------------------------------------------------------------- */
+.box-7 {
+  display: flex;
+  align-items: left;
+  padding: 24px 16px  10px 24px;
+}  
+/* .container-best-region {
+  width: 585px; 
+  height: 270px; 
+  margin: 0 16px  21px 16px;
+} */
+
+.box-7__title {
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: left;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+}  
+
+.city-1-transaction,
+.city-2-transaction,
+.city-3-transaction {
+  display:inline-flex;
+  margin: 10px 0px  0px 0px;
+}
+
+.city-name { 
+  display: inline-flex;
+  width: 230px;
+  height: 23px;
+  margin: 22.83px 0 22.83px 0;
+  white-space: nowrap;  
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+}
+.transaction-amount {
+  display: inline-flex;
+  white-space: nowrap;
+  justify-content: flex-end;
+  width: 180px;
+  height: 23px; 
+  margin: 22.83px 16px 22.83px 0;
+  /* margin-right: 16px; */
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+  font-size: 20px;
+  line-height: 23.44px;
+}
+.transaction-currency {
+  display: inline-flex;
+  white-space: nowrap;
+  /* margin: 22.83px 16px 22.83px 0; */
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(4, 40, 76, 0.6);
+  line-height: 17.58px;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ---------------------------------------------------box-8-------------------------------------------------------------------- */
+.box-8__container{
+  padding: 24px 0 0 24px;
+}
+
+.box-8__title{
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: left;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: rgba(4, 40, 76, 1);
+}
+
+.container-best-seller {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-best-seller-first,
+.container-best-seller-second,
+.container-best-seller-third {
+  margin: 0 0 0 0;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.transactions_descr_top_fullname{
+  display: block;
+  padding: 0 16px 0 0;
+}
+
+.transactions_descr_name-first,
+.transactions_descr_name-second,
+.transactions_descr_name-third {
+  width: 212px;
+  /* height: 43px; */
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+  padding: 0 0 4px 0;
+}
+.transactions_descr_date-first,
+.transactions_descr_date-second,
+.transactions_descr_date-third{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(4, 40, 76, 0.6);
+}
+
+.date-first,
+.date-second,
+.date-third {
+  padding-right: 8px;
+}  
+
+.transactions_descr_money-first,
+.transactions_descr_money-second,
+.transactions_descr_money-third {
+  width: 90px;
+  height: 23px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: right;
+  white-space: nowrap;
+  margin: 0 16px 0 0;
+  color: rgba(4, 40, 76, 1);
+}
+
+.transactions_descr_bestamount_currency{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.58px;
+  white-space: nowrap;
+  color: rgba(4, 40, 76, 0.6);
+}
+
+.img_people-first-min,
+.img_people-second-min,
+.img_people-third-min {
+  width: 84px;
+  height: 84px;
+  margin: 30px 16px 20px 0;
+}
+  
+/* ---------------------------------------------------box-9-------------------------------------------------------------------- */
+.container-best{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-9__title {
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: left;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+  margin: 0 0 73px 0;
+} 
+
+.container-best-1 {
+  margin:0 46.5px 0 46.5px;
+}
+
+.img-number-1-name {
+  width: 180px;
+  height: 180px;
+  margin: 0 0 14px 0;
+  
+}
+
+.transactions-best-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  margin: 0 0 4px 0;
+  color: rgba(4, 40, 76, 1);
+}
+
+.transactions-best-date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin: 0 0 36px 0;
+  color: rgba(4, 40, 76, 0.6);
+}
+
+.transactions-best-amount {
+  text-align: center;
+  width: 180px;
+  height: 23px; 
+  font-size: 20px;
+  line-height: 23.44px;
+  margin: 0 0 4зч 0;
+  font-weight: 600;
+  color: rgba(4, 40, 76, 1);
+}
+.transactions-best-currency{
+  text-align: center;
+  width: 180px;
+  height: 23px; 
+  font-size: 14px;
+  line-height: 23.44px;
+  margin: 0 0 36px 0;
+  color: rgba(4, 40, 76, 0.6);
+}
+
+ 
+/* Медиа-запрос для более узких экранов */
+@media (max-width: 600px) {
+  .box-1 {
+    width: 100%; /* Заполнить всю доступную ширину на узких экранах */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+  }
+}

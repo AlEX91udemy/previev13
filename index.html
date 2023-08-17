@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_diagrama.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1"> 
+            <div class="box-1__container">
+                <div class="box-1__title">
+                    Процент выполнения <br> ключевых показателей <br>  эффективности
+                </div>
+                <div class="box-1__diagram">
+                    <div class="canvas">
+                        <svg class="chart hidden" width="300" height="300" viewBox="0 3 44 44">
+                          <circle class="unit" r="16.9" cx="50%" cy="50%"></circle> <!--  при измении r  меняется окружность, толщину менять через stroke-width: 3;  -->
+                          <circle class="unit" r="16.9" cx="50%" cy="50%"></circle>
+                          <circle class="unit" r="16.9" cx="50%" cy="50%"></circle>
+                          <circle class="unit" r="16.9" cx="50%" cy="50%"></circle>
+                          <circle class="unit" r="16.9" cx="50%" cy="50%"></circle>
+                          <text clas="test-text" x="50%" y="50%" text-anchor="middle" dy="0.3em" font-size="8" font-weight="700" fill="rgba(4, 40, 76, 1)" >
+                            70% 
+                          </text>
+                        </svg>
+                    </div>
+                    <div class="legend hidden">
+                        <ul class="caption-list">
+                          <li class="caption-item">Екатеринбург 20%</li>
+                          <li class="caption-item">Москва  17%</li>
+                          <li class="caption-item">Челябинск 13%</li>
+                          <li class="caption-item">Санкт-Петербург 11%</li>
+                          <li class="caption-item">Новосибирск  9%</li>
+
+                        </ul>
+                      </div>
+                </div>
+
+            <div class="box-1__item">      
+                <div class="box-1__item-plan">Выполнение плана продаж <br>(по заключенным ДКП)</div> 
+                <hr>
+                <div class="plan">
+                    <span class="plan__item-str">План</span>
+                    <span class="plan__item-num">1 500 000 000 руб.</span>
+                </div>
+                
+                <div class="fact">
+                    <span class="fact__item-str">Факт</span>
+                    <span class="fact__item-num">1 500 000 000 руб.</span>
+                </div>
+            </div>     
+        </div>
+        </div>
+        <div class="box-2"> 
+            <div class="box-2__container">
+                  <div class="box-2__title">Акцепт <span class="kp">КП</span></div>
+                  <div class="acceptance">
+                    <div class="acceptance__item-str">4 сделки</div>
+                    <div class="acceptance__item-num"> 4 665 555 555 379 348р.</div>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="box-3"> 
+            <div class="box-3__container">
+                <div class="box-3__title">Подготовка <span class="kk">КК</span></div>
+                <div class="preparation">
+                  <div class="preparation__item-str">4 сделки</div>
+                  <div class="preparation__item-num">5 379 348р.</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-4"> 
+            <div class="box-4__container">
+                <div class="box-4__title"><span class="kk"> КК </span>проведен</div>
+                <div class="conducted">
+                  <div class="conducted__item-str">4 сделки</div>
+                  <div class="conducted__item-num">5 379 348р.</div>
+            </div>
+        </div>
+        </div>
+        <div class="box-5">
+            <div class="box-5__container">
+                <div class="box-5__title">Одобрено</div>
+                <div class="approved">
+                  <div class="approved__item-str">4 сделки</div>
+                  <div class="approved__item-num">5 379 348р.</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-6"> 
+            <div class="box-6__container">
+                <div class="box-6__title">Передано в сопровождение</div>
+                <div class="transferred">
+                  <div class="transferred__item-str">4 сделки</div>
+                  <div class="transferred__item-num">5 379 348р.</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-7">
+            <div class="box-7__container">
+                <div class="container-best-region">
+                    <div class="box-7__title"> Лучший региональный офис продаж</div>
+                    <div class="city-1-transaction">
+                        <div class="city-name">Екатеринбург</div>
+                        <div class="transaction-amount">2 222 337 998</div>
+                        <span class="transaction-currency"> тыс. руб.</span>
+                        <img src="icons/1_small.png" alt="first" class="number1min">
+                    </div>
+            
+                    <div class="city-2-transaction">
+                        <div class="city-name">Москва</div>
+                        <div class="transaction-amount">111 149 428</div>
+                        <span class="transaction-currency"> тыс. руб.</span>
+                        <img src="icons/2_small.png" alt="second" class="number2min">
+                    </div>
+            
+                    <div class="city-3-transaction">
+                        <div class="city-name">Новосибирск</div>
+                        <div class="transaction-amount">49 428</div>
+                        <span class="transaction-currency"> тыс. руб.</span>
+                        <img src="icons/3_small.png" alt="third" class="number3min">
+                    </div>
+                </div>
+            </div>
+            
+              
+        </div>
+        <div class="box-8">
+            <div class="box-8__container">
+                    <div class="box-8__title">Лидеры личных продаж</div>
+                    <div class="container-best-seller">
+                        <div class="container-best-seller-first">
+                            <img src="img/Хурназиди Роман.png" alt="first" class="img_people-first-min">
+                            <div class="transactions_descr_top_fullname">
+                                <div class="transactions_descr_name-first">Хурназиди Роман</div>
+                                <div class="transactions_descr_date-first">
+                                    <span class="date-first">15.06.2023</span>
+                                    <span class="location-first">Челябинск</span>
+                                </div>
+                            </div>
+                            <div class="transactions_descr_money-first">227 310</div>
+                            <span class="transactions_descr_bestamount_currency">тыс. руб.</span>
+                            <img src="icons/1_middle.png" alt="first" class="number_middle">
+                        </div>
+                        <div class="container-best-seller-second">
+                            <img src="img/Рыжий Анатолий.png" alt="second" class="img_people-second-min">
+                            <div class="transactions_descr_top_fullname">
+                                <div class="transactions_descr_name-second">Рыжий Анатолий</div>
+                                <div class="transactions_descr_date-second">
+                                    <span class="date-second">12.06.2023</span>
+                                    <span class="location-second">Москва</span>
+                                </div>
+                            </div>
+                            <div class="transactions_descr_money-second">1 400 000</div>
+                            <span class="transactions_descr_bestamount_currency">тыс. руб.</span>
+                            <img src="icons/2_middle.png" alt="first" class="number_middle">
+                        </div>
+                        <div class="container-best-seller-third">
+                            <img src="img/Яковлева Анастасия.png" alt="third" class="img_people-third-min">
+                            <div class="transactions_descr_top_fullname">
+                                <div class="transactions_descr_name-third">Яковлева Анастасия</div>
+                                <div class="transactions_descr_date-third">
+                                    <span class="date-third">02.06.2023</span>
+                                    <span class="location-third">Екатеринбург</span>
+                                </div>
+                            </div>
+                            <div class="transactions_descr_money-third">1 168 338</div>
+                            <span class="transactions_descr_bestamount_currency">тыс. руб.</span>
+                            <img src="icons/3_middle.png" alt="first" class="number_middle">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="box-9">
+            <div class="container-best">
+                <div class="box-9__title">Лучшая сделка</div>
+                <div class="container-best-1">
+                    <img src="img/Рыжий Анатолий2.png" alt="best-deal" class="img-number-1-name">
+                    <div class="transactions-best-name">Рыжий Анатолий</div>
+                    <div class="transactions-best-date">12.06.2023 <span>Москва</span></div>
+                    <div class="transactions-best-amount">1 192 000</div>
+                    <div class="transactions-best-currency">тыс. руб.</div>
+                    <img src="icons/1big.png" alt="first" class="number-1">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

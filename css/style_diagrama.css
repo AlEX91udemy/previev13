@@ -1,0 +1,195 @@
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Regular.woff') format('woff'),
+    url('Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+/* эффект при появлении страницы */
+  /* @keyframes render {
+    0% {
+      stroke-dasharray: 100 100;
+
+      opacity: 0;
+    }
+
+  } */
+  
+  li {
+    padding: 1px 5px;
+    border: 1px solid rgba(200, 210, 220, 1);
+    border-radius: 20px;
+
+  }
+
+.box-1__diagram {
+    display: inline;
+    justify-content: center;
+}
+
+.caption-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.caption-item:nth-child(1)::before {
+    list-style: none;
+    content: "•";
+    color: rgba(255, 216, 142, 1); /* Замените на желаемый цвет, например, красный (#FF0000) */
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px; /* Регулирует расстояние между точкой и текстом */
+    
+}
+
+.caption-item:nth-child(2)::before {
+    list-style: none;
+    content: "•";
+    color: rgba(165, 255, 142, 1); /* Замените на желаемый цвет, например, красный (#FF0000) */
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px; /* Регулирует расстояние между точкой и текстом */
+}
+
+.caption-item:nth-child(3)::before {
+    list-style: none;
+    content: "•";
+    color: rgba(142, 153, 255, 1); /* Замените на желаемый цвет, например, красный (#FF0000) */
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px; /* Регулирует расстояние между точкой и текстом */
+}
+
+.caption-item:nth-child(4)::before {
+    list-style: none;
+    content: "•";
+    color: rgba(255, 142, 210, 1); /* Замените на желаемый цвет, например, красный (#FF0000) */
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px; /* Регулирует расстояние между точкой и текстом */
+}
+
+.caption-item:nth-child(5)::before {
+    list-style: none;
+    content: "•";
+    color: rgba(113, 187, 255, 1); /* Замените на желаемый цвет, например, красный (#FF0000) */
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px; /* Регулирует расстояние между точкой и текстом */
+}
+
+.caption-list {
+    display: flex;
+    justify-content: space-around;
+    width: 349px;
+    height: 100px;
+    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 0 0 0px;
+
+}
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    transform: rotate(0deg)
+}
+
+.caption-list{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.unit {
+  fill: none;
+   stroke-width: 3; 
+   /* изменяет толщину  */
+  cursor: pointer;
+  
+  animation-name: render;
+  animation-duration: 3s;
+  /* плавные переходы */
+  transition-property: all; 
+  transition-duration: 1.5s;
+}
+/* эффект при наведении */
+.unit:hover {
+    opacity: 0.8;
+    stroke-width: 5;
+  }
+/* эффект при наведении на город */
+.hovered {
+    opacity: 0.8; 
+    stroke-width: 6;
+  } 
+
+:root {
+    --color-1: rgba(255, 216, 142, 1);
+    --color-2: rgba(165, 255, 142, 1);
+    --color-3: rgba(142, 153, 255, 1);
+    --color-4: rgba(255, 142, 210, 1);
+    --color-5: rgba(113, 187, 255, 1);
+  }
+
+  .unit:nth-child(1) {
+    stroke: var(--color-1);
+    stroke-dasharray: 20 100;
+    stroke-dashoffset: -4;
+    /* изменяет толщину  */
+    /* animation-name: render; */
+    /* animation-duration: 1.5s; */
+    /* animation-delay: 0.2s; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+} 
+
+.unit:nth-child(2) {
+    stroke: var(--color-2);
+    stroke-dasharray: 17 100;
+    stroke-dashoffset: -24;
+    /* animation-name: render; */
+    /* animation-duration: 1.5s; */
+    /* animation-delay: 0.4s; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+ } 
+
+ .unit:nth-child(3) {
+    stroke: var(--color-3);
+    stroke-dasharray: 13 100;
+    stroke-dashoffset: -41;
+    /* animation-name: render; */
+    /* animation-duration: 1.5s; */
+    /* animation-delay: 0.6s; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+}
+
+.unit:nth-child(4) {
+    stroke: var(--color-4);
+    stroke-dasharray: 11 100;
+    stroke-dashoffset: -54;
+    /* animation-name: render; */
+    /* animation-duration: 1.5s; */
+    /* animation-delay: 0.8s; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+ }
+
+ .unit:nth-child(5) {
+    stroke: var(--color-5);
+    stroke-dasharray: 9 100;
+    stroke-dashoffset: -65;
+    /* animation-name: render; * 
+    /* animation-duration: 1.5s; */
+    /* animation-delay: 1.0s; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+ }
+
