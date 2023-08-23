@@ -91,7 +91,7 @@ body {
   gap: 16px 10px;
   height: 805px;
   /* width:  1786px; */
-  /* margin: 200px 200px 100px 100px; */
+  margin: 20px 20px 20px 20px;
 
   
   
@@ -105,7 +105,11 @@ grid-template-areas:
   "A A A A   E E E E    H H H H  I I I I"
   "A A A A   F F F F    H H H H  I I I I";
 
-  justify-content: start;
+  /* justify-content: start; */
+  justify-content: space-around;
+    /* align-content: stretch;
+    align-items: center;
+    justify-items: end; */
 }
 .box-1 {
   grid-area: A;
@@ -572,8 +576,8 @@ body {
 
 .container {
   max-width: 1786px;
-  margin: 0;
-  padding: 20px;
+  /* margin: 10px 10px 0px 30px; */
+  /* padding: 10px; */
 }
 
 /* Остальной CSS... */
