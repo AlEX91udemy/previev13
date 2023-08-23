@@ -105,11 +105,10 @@ grid-template-areas:
   "A A A A   E E E E    H H H H  I I I I"
   "A A A A   F F F F    H H H H  I I I I";
 
-  /* justify-content: start; */
-  justify-content: space-around;
-    /* align-content: stretch;
-    align-items: center;
-    justify-items: end; */
+  justify-content: start;
+  align-content: stretch;
+    /* align-items: center;
+    justify-items: end;  */
 }
 .box-1 {
   grid-area: A;
