@@ -90,7 +90,7 @@ body {
   display: grid;
   gap: 16px 10px;
   height: 805px;
-  width:  1786px;
+  /* width:  1786px; */
   /* margin: 200px 200px 100px 100px; */
 
   
@@ -109,58 +109,75 @@ grid-template-areas:
 }
 .box-1 {
   grid-area: A;
-  width: 400px; /* Ширина блока в пикселях */
-  
-  height: 805px; /* Высота блока в пикселях */
-  
+  width: 100%;
+  height: auto;
+  /* width: 400px; 
+  height: 805px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
+  
 }
 .box-2 {
   grid-area: B;
-  width: 400px; 
-  height: 148.2px; 
+  width: 100%;
+  height: auto;
+  /* width: 400px;
+  height: 148.2px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-3 {
   grid-area: C;
-  width: 400px; 
-  height: 148.2px; 
+  width: 100%;
+  height: auto;
+  /* width: 400px; 
+  height: 148.2px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 .box-4 {
   grid-area: D;
-  width: 400px; 
-  height: 148.2px; 
+  width: 100%;
+  height: auto;
+  /* width: 400px; 
+  height: 148.2px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-5 {
   grid-area: E;
-  width: 400px; 
-  height: 148.2px; 
+  width: 100%;
+  height: auto;
+  /* width: 400px; 
+  height: 148.2px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-6 {
   grid-area: F;
-  width: 400px; 
-  height: 148.2px; 
+  width: 100%;
+  height: auto;
+  /* width: 400px; 
+  height: 148.2px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-7 {
   grid-area: G;
-  width: 617px; 
-  height: 312px; 
+  width: 100%;
+  height: auto;
+  /* width: 617px; 
+  height: 312px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-8 {
   grid-area: H;
-  width: 617px; 
-  height: 477px; 
+  width: 100%;
+  height: auto;
+  /* width: 617px; 
+  height: 477px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 .box-9 {
   grid-area: I;
-  width: 321px; 
-  height: 805px; 
+  width: 100%;
+  height: auto;
+  /* width: 321px; 
+  height: 805px;  */
   box-shadow: 0 5px 10px rgba(0, 0, 0,  0.05);
 }
 /* ---------------------------------------------------box-1-------------------------------------------------------------------- */
@@ -518,7 +535,7 @@ grid-template-areas:
   height: 23px; 
   font-size: 20px;
   line-height: 23.44px;
-  margin: 0 0 4зч 0;
+  margin: 0 0 4px 0;
   font-weight: 600;
   color: rgba(4, 40, 76, 1);
 }
@@ -564,35 +581,35 @@ body {
 /* Медиа-запросы для адаптивности */
 @media (max-width: 1800px) {
   .container {
-    width: 100%;
+    max-width: 90%;
   }
 }
 
 @media (max-width: 1199px) {
   .container {
     /* width: 960px */
-    width: 100%;
+    max-width: 85%;
   }
 }
 
 @media (max-width: 991px) {
   .container {
     /* width: 720px */
-    width: 100%;
+    max-width: 80%;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     /* width: 540px */
-    width: 100%;
+    max-width: 75%;
   }
 }
 
 @media (max-width: 575px) {
   .container {
     /* width: 100% */
-    width: 100%;
+    max-width: 100%;
   }
 }
 
