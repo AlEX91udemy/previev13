@@ -112,7 +112,7 @@ grid-template-areas:
 }
 .box-1 {
   grid-area: A;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(200px + (400 - 200) * ((100vw - 50px) / (1920 - 500)));
   height: auto;
   /* width: 400px; 
   height: 805px;  */
@@ -121,7 +121,7 @@ grid-template-areas:
 }
 .box-2 {
   grid-area: B;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (400 - 100) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 400px;
   height: 148.2px;  */
@@ -129,7 +129,7 @@ grid-template-areas:
 }
 .box-3 {
   grid-area: C;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (400 - 100) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 400px; 
   height: 148.2px;  */
@@ -137,7 +137,7 @@ grid-template-areas:
 }
 .box-4 {
   grid-area: D;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (400 - 100) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 400px; 
   height: 148.2px;  */
@@ -145,7 +145,7 @@ grid-template-areas:
 }
 .box-5 {
   grid-area: E;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (400 - 100) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 400px; 
   height: 148.2px;  */
@@ -153,7 +153,7 @@ grid-template-areas:
 }
 .box-6 {
   grid-area: F;
-  width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(100px + (400 - 100) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 400px; 
   height: 148.2px;  */
@@ -161,7 +161,7 @@ grid-template-areas:
 }
 .box-7 {
   grid-area: G;
-  width: calc(200px + (617 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(200px + (617 - 200) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 617px; 
   height: 312px;  */
@@ -169,7 +169,7 @@ grid-template-areas:
 }
 .box-8 {
   grid-area: H;
-  width: calc(200px + (617 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(200px + (617 - 200) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 617px; 
   height: 477px;  */
@@ -177,7 +177,7 @@ grid-template-areas:
 }
 .box-9 {
   grid-area: I;
-  width: calc(200px + (321 - 200) * ((100vw - 500px) / (1920 - 500)));
+  width: calc(200px + (321 - 200) * ((100vw - 100px) / (1920 - 500)));
   height: auto;
   /* width: 321px; 
   height: 805px;  */
